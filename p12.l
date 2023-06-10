@@ -1,3 +1,8 @@
+yacc -d 12.y
+lex 12.l
+gcc lex.yy.c y.tab.c
+./a.out
+
 12.l
 %{
 #include<stdio.h>
